@@ -1,0 +1,43 @@
+# Weather App and Testing Suite
+
+This repository contains a simple weather application and a set of Cypress tests designed to verify its functionality. The weather application allows users to search for weather information for various cities.
+
+## Weather App
+
+### Getting Started
+1. Clone this repository to your local machine.
+
+2. Open the `index.html` file to run the weather application in your web browser.
+
+3. Enter the name of a city in the search bar and press 'Enter' to retrieve weather information.
+
+### Application Features
+- The application provides weather information such as humidity, wind speed, and a brief description for the entered city.
+
+- The application also displays a background image based on the city's location.
+
+## Tests
+
+### Running the Tests
+1. Ensure that Node.js and Cypress are installed on your system.
+
+2. Clone this repository if you haven't already.
+
+3. Open your terminal and navigate to the repository's root directory.
+
+4. Run the Cypress tests by executing the following command:
+
+
+
+
+5. In the Cypress Test Runner, select a test file (e.g., `search.spec.js`) to run the tests.
+
+### Custom Cypress Command
+
+To simplify the selection of elements with data attributes for testing, we have created a custom Cypress command called `getDataTest`. This command allows you to select elements using their `data-test` attribute.
+
+Here is the custom command:
+```javascript
+Cypress.Commands.add('getDataTest', (dataTestSelector) => {
+return cy.get(`[data-test="${dataTestSelector}`);
+});
