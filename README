@@ -1,6 +1,6 @@
 # Weather App and Testing Suite
 
-This repository contains a simple weather application and a set of Cypress tests designed to verify its functionality. The weather application allows users to search for weather information for various cities.
+This repository contains a simple Weather application and a set of Cypress tests designed to verify its functionality (Both designed and developped by me :) ). The weather application allows users to search for weather information for various cities using a free API service.
 
 ## Weather App
 
